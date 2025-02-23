@@ -1,0 +1,29 @@
+
+
+body{
+  background-color: var(--background-beige); 
+}
+
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;  /* Slightly larger font size */
+    font-weight: 700;    /* Make it bold */
+    color: var(--color-orange);
+    text-decoration: none;
+}
+
+
+.navbar-text {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-dark-blue);
+    text-decoration: none;
+    margin: 0 1rem;  /* Add some horizontal spacing */
+    transition: color 0.2s ease-in-out;  /* Smooth color transition on hover */
+}
+
+
+:root {
+  --darkblue: #062d3e;
+  --background-beige: #ebe3cc;
+}
