@@ -4,6 +4,11 @@ const path = require("path");
 const ejsMate = require("ejs-mate");
 const morgan = require("morgan");
 const methodOverride = require("method-override");
+const Toy = require("./models/toys");
+const Food = require("./models/food");
+const Pet = require("./models/pets");
+const Clothes = require("./models/clothes");
+const mongoose = require("mongoose");
 
 // Set EJS as the view engine
 
@@ -20,9 +25,22 @@ app.use(
   express.static(__dirname + "/node_modules/@flaticon/flaticon-uicons"),
 );
 
+mongoose.connect("mongodb://localhost:27017/petstoreapp");
+
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", async () => {
+  console.log("Database connected");
+});
+
 // Sample route
-app.get("/", (req, res) => {
-  res.render("index");
+app.get("/", async (req, res) => {
+  const toy = await Toy.find({});
+  const pet = await Pet.find({});
+  const food = await Food.find({});
+  const clothes = await Clothes.find({});
+
+  res.render("index", { toy, pet, food, clothes });
 });
 
 // Start server
