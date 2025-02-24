@@ -41,8 +41,8 @@ body{
   display:flex;
   flex-shrink: 0;
   border-radius: 5px;
-  border: 2px solid white;
-  background-color:  #ebe3c4;
+  border: 2px black;
+  background-color: #ede7d3;
   height:300px;
   width: 250px;
   margin-right: 10px; /* Add spacing between items */
