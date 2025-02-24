@@ -21,8 +21,53 @@
     </div>
   </section>
 
+
   <section>
     <div class="container">
-
+      <div class="row">
+        <h2>Pets</h2>
+        <div class="product-list col-md-12 mt-3">
+          <% pet.forEach(pet=> { %>
+            <div class="product-item">
+              <a href="https://www.freeiconspng.com/img/22667" title="Image from freeiconspng.com"><img
+                  src="https://www.freeiconspng.com/uploads/dog-png-30.png" width="350"
+                  alt="Download For Free Dog Png In High Resolution" /></a>
+              <p>
+              </p>
+            </div>
+            <% }) %>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Pet Clothes</h2>
+        <div class="product-list col-md-12 mt-3">
+          <% clothes.forEach(item=> { %>
+            <div class="product-item">
+              <img src="/images/clothes.png">
+            </div>
+            <% }) %>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Pet Food</h2>
+        <div class="product-list col-md-12 mt-3">
+          <% food.forEach(foodItem=> {%>
+            <div class="product-item">
+              <img src="https://pngimg.com/uploads/dog_food/dog_food_PNG53.png" alt="">
+            </div>
+            <%})%>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Pet Toys</h2>
+        <div class="product-list col-md-12 mt-3">
+          <% toy.forEach(toy=> {%>
+            <div class="product-item">
+              <img src="/images/toy.png">
+            </div>
+            <%})%>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
