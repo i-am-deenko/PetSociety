@@ -1,6 +1,6 @@
 
 body{
-  background-color: var(--background-beige); 
+  background-color: white; 
 }
 
 .navbar-brand {
@@ -21,40 +21,44 @@ body{
     transition: color 0.2s ease-in-out;  /* Smooth color transition on hover */
 }
 
-.product-list {
-  display: flex;
-  margin: 1rem;
-  overflow-x: auto;
-  white-space: nowrap;  /* Optional, not needed for flex */
-  height: 350px;
-  padding: 10px 0; /* Add space for smoother scroll */
+
+/* Hero Part */
+
+.hero{
+margin-top:5rem;
 }
 
 
-.product-item img{
-  max-width:100%;
-  max-height:100%;
+.hero-heading{
+background-color: none !important;
+margin-top:5rem;
 }
 
-.product-item {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display:flex;
-  flex-shrink: 0;
-  border-radius: 5px;
-  border: 2px black;
-  background-color: #ede7d3;
-  height:300px;
-  width: 250px;
-  margin-right: 10px; /* Add spacing between items */
+.hero-heading h1{
+ text-shadow:4px 1px 5px black; 
 }
 
-.product-item p{
-  position: relative;
-  z-index: 100;
-   
+
+.hero-button{
+margin-top:5rem;
 }
 
-/* CSS */
+.pet-adoption img{
+width:400px;
+height:500px;
+
+}
+
+
+.pet-clothes{
+display:flex;
+justify-content: space-around;
+}
+
+.pet-clothes img{
+width:400px;
+height:500px;
+}
 
 .button-31 {
   display: flex;

@@ -3,71 +3,47 @@
   <section class="hero mb-5">
     <div class="container mb-5">
       <div class="row align-items-center mb-5">
-        <div class="col-md-7">
-          <h1>Your one-stop shop for finding your perfect pet and everything they need.</h1>
-          <p class="mt-4">Discover adorable pets looking for loving homes and a wide selection of premium supplies to
-            keep them happy
-            and healthy.</p>
-          <div class="d-flex align-items-center justify-content-center mt-3">
-            <button class="button-31">Shop Now</button>
+        <div class="col-md-12 text-center">
+          <div class="hero-heading">
+            <h1>Your one-stop shop for finding your perfect pet and everything they need.</h1>
+          </div>
+          <div class="hero-button d-flex align-items-center justify-content-center ">
+            <button class="button-31">Get Started</button>
           </div>
         </div>
-        <div class="col-md-5">
-          <img src="images/cat-dog.png" alt="Image of two animals" class="img-fluid rounded">
-        </div>
-
       </div>
-
     </div>
   </section>
 
 
-  <section>
-    <div class="container">
-      <div class="row">
-        <h2>Pets</h2>
-        <div class="product-list col-md-12 mt-3">
-          <% pet.forEach(pet=> { %>
-            <div class="product-item">
-              <a href="https://www.freeiconspng.com/img/22667" title="Image from freeiconspng.com"><img
-                  src="https://www.freeiconspng.com/uploads/dog-png-30.png" width="350"
-                  alt="Download For Free Dog Png In High Resolution" /></a>
-              <p>
-              </p>
+  <section class="pet-adoption ">
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-5">
+              <h1>Looking to adopt?</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, possimus. Illo, architecto ex quidem
+                hic nemo soluta sit, consectetur tempore illum mollitia reiciendis quam dolor fugiat, inventore atque?
+                Consectetur, totam!</p>
             </div>
-            <% }) %>
-        </div>
-      </div>
-      <div class="row">
-        <h2>Pet Clothes</h2>
-        <div class="product-list col-md-12 mt-3">
-          <% clothes.forEach(item=> { %>
-            <div class="product-item">
-              <img src="/images/clothes.png">
+            <div class="col-md-7 d-flex justify-content-end">
+              <img src="/images/dalmatiner.png">
             </div>
-            <% }) %>
-        </div>
-      </div>
-      <div class="row">
-        <h2>Pet Food</h2>
-        <div class="product-list col-md-12 mt-3">
-          <% food.forEach(foodItem=> {%>
-            <div class="product-item">
-              <img src="https://pngimg.com/uploads/dog_food/dog_food_PNG53.png" alt="">
-            </div>
-            <%})%>
-        </div>
-      </div>
-      <div class="row">
-        <h2>Pet Toys</h2>
-        <div class="product-list col-md-12 mt-3">
-          <% toy.forEach(toy=> {%>
-            <div class="product-item">
-              <img src="/images/toy.png">
-            </div>
-            <%})%>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+
+  <section class="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="pet-clothes col-md-12">
+          <img src="/images/cat-in-clothes.png" alt="">
+          <img src="/images/dog-in-clothes.png" alt="">
+        </div>
+      </div>
     </div>
   </section>
